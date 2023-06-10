@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Explore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&family=Poiret+One&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+   <style>
+    body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poiret One", cursive;
+    background-color: black;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    margin-top: 2%;
+    margin-left: 26%;
+  }
+  .logo {
+    margin: 0.1rem -0.3rem;
+  }
+  .logo-text {
+    margin-top: 1.5%;
+  }
+  .logo h2 {
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(#000ad8, #ff3d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Neucha", cursive;
+  }
+  .logo h6 {
+    text-align: right;
+    font-weight: 600;
+    margin-top: -2%;
+    background: linear-gradient(#ff3d00, #000ad8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #home {
+    display: flex;
+    width: 100%;
+  }
+  #home::before {
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    background: url("/images/Beach-Wallpaper-HD-Free-download.jpg")
+      no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .navigation {
+    margin-left: 38%;
+    margin-top: 1%;
+    font-size: 1.08rem;
+  }
+  .dropdown-menu {
+    background: transparent;
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar-nav {
+    --bs-nav-link-hover-color: rgba(255, 255, 255, 0.9);
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .nav-link:active{
+    color: rgba(255, 255, 255, 0.9);
+  }
+  @media screen and (max-width: 1230px) {
+    .navigation {
+      margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    .navigation {
+      margin-left: 30%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .navigation {
+      margin-top: 3.1%;
+    }
+    .logo-text {
+      padding-top: 3%;
+    }
+  }
+  @media screen and (max-width: 647px) {
+    .logo-text {
+      padding-top: 2%;
+    }
+    .logo h2 {
+      font-size: 1.3rem;
+    }
+    .logo h6 {
+      font-size: 0.8rem;
+    }
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 514px) {
+    .navbar-toggler-icon {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+    .logo-text {
+      width: 40%;
+    }
+    .navigation {
+      margin-left: 17%;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .logo img {
+      margin-top: 26%;
+    }
+    .logo h6 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navigation {
+      margin-left: 10%;
+    }
+    .nav-link {
+      font-size: 0.8rem;
+    }
+    .logo {
+      width: 35%;
+      margin-left: -3%;
+    }
+    .logo img {
+      width: 60%;
+      margin-top: 1%;
+    }
+    .logo-text {
+      margin-left: -10%;
+    }
+  }
+  .middle{
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  h1{
+    font-family: "Neucha", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .btn-mid{
+    text-align: center;
+  }
+  .btn{
+    font-weight:600;
+  }
+  @media screen and (max-width: 1110px) {
+    .middle{
+    margin-top: 14%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .middle{
+    margin-top: 10%;
+    }
+  }
+  .box {
+    position: absolute;
+  }
+  .overlay {
+    z-index: 0;
+    margin-top: 15%;
+  }
+  .btn a{
+    text-decoration: none;
+    color: inherit;
+  }
+.textbox{
+  /* width: 100%; */
+    margin-bottom: 1%;
+    font-size: 1.2rem;
+    height: 39px;
+}
+label{
+  text-align: left !important;
+}
+   </style>
+  </head>
+  <body>
+    <div id="home">
+      <div class="container-fluid" style="position: relative;">
+      <div class="row box" style="width: 100%">
+        <div class="logo col-lg-1 col-md-2 col-sm-2 col-2 ">
+          <img
+            src="/images/detailed-travel-logo_23-2148616554.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="logo logo-text col-lg-3 col-md-4 col-sm-4 col-4">
+          <h2>MISSION EXPLORE</h2>
+          <h6>a never ending exploration</h6>
+        </div>
+
+        <div class="navigation col-lg-3 col-md-2 col-sm-2 col-2" style="position: relative;">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler ms-auto"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="margin-right: 2%;"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="/"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/blogs">Blogs</a>
+                  </li>
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="box overlay" style="position: absolute;z-index: 0;">
+
+ 

@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid" style="margin-top: -7%;">
+<h2 style="font-weight: 600;">Day1</h2>
+<p style="color:white"> <%= blog %> </p>
+<% posts.forEach(function(post){ %>
+     <h2 style="font-weight: 600;"> <%= post.title %> </h2> 
+     <p style="color:white"> <%= post.content %>
+     <a style="color:white" href="/posts/<%=post._id%>">Read More</a>
+     </p> 
+     
+<% }) %>
+
+</div>
+<%- include("partials/footer"); -%> 

@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: "Poiret One", cursive;
+    background-color: black;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    margin-top: 2%;
+    margin-left: 26%;
+  }
+  .logo {
+    margin: 0.1rem -0.3rem;
+  }
+  .logo-text {
+    margin-top: 1.5%;
+  }
+  .logo h2 {
+    font-weight: 900;
+    margin: 0;
+    background: linear-gradient(#000ad8, #ff3d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Neucha", cursive;
+  }
+  .logo h6 {
+    text-align: right;
+    font-weight: 600;
+    margin-top: -2%;
+    background: linear-gradient(#ff3d00, #000ad8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #home {
+    display: flex;
+    width: 100%;
+  }
+  #home::before {
+    content: "";
+    opacity: 0.8;
+    top: 0;
+    background: url("images/Beach-Wallpaper-HD-Free-download.jpg")
+      no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .navigation {
+    margin-left: 38%;
+    margin-top: 1%;
+    font-size: 1.08rem;
+  }
+  .dropdown-menu {
+    background: transparent;
+  }
+  .dropdown-item {
+    color: white;
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .navbar-nav {
+    --bs-nav-link-hover-color: rgba(255, 255, 255, 0.9);
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show > .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  @media screen and (max-width: 1230px) {
+    .navigation {
+      margin-left: 35%;
+    }
+  }
+  @media screen and (max-width: 1110px) {
+    .navigation {
+      margin-left: 30%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .navigation {
+      margin-top: 3.1%;
+    }
+    .logo-text {
+      padding-top: 3%;
+    }
+  }
+  @media screen and (max-width: 647px) {
+    .logo-text {
+      padding-top: 2%;
+    }
+    .logo h2 {
+      font-size: 1.3rem;
+    }
+    .logo h6 {
+      font-size: 0.8rem;
+    }
+    .nav-link {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 514px) {
+    .navbar-toggler-icon {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
+    .logo-text {
+      width: 40%;
+    }
+    .navigation {
+      margin-left: 17%;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    .logo img {
+      margin-top: 26%;
+    }
+    .logo h6 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .navigation {
+      margin-left: 10%;
+    }
+    .nav-link {
+      font-size: 0.8rem;
+    }
+    .logo {
+      width: 35%;
+      margin-left: -3%;
+    }
+    .logo img {
+      width: 60%;
+      margin-top: 1%;
+    }
+    .logo-text {
+      margin-left: -10%;
+    }
+  }
+  .middle{
+    margin-top: 11%;
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 2rem;
+  }
+  h1{
+    font-family: "Neucha", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .btn-mid{
+    text-align: center;
+  }
+  .btn{
+    font-weight:600;
+  }
+  @media screen and (max-width: 1110px) {
+    .middle{
+    margin-top: 14%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .middle{
+    margin-top: 10%;
+    }
+  }
+  .box {
+    position: absolute;
+  }
+  .overlay {
+    z-index: 0;
+    margin-top: 15%;
+  }
